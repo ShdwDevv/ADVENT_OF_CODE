@@ -17,7 +17,7 @@ public class Day3{
     public static void main(String[] args) {
         int res = 0;
         try{
-            // To get file
+            // To get files
             File input = new File("input.txt");
             Scanner sc = new Scanner(input);
             List<char[]> arr = new ArrayList<>();
@@ -51,6 +51,7 @@ public class Day3{
                     }
                 }
             }
+            sc.close();
         }
         catch(FileNotFoundException e){
             e.printStackTrace();
